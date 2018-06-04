@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "748983923706",
+    "firebase_url": "https://rumusmatematikalengkap-9c693.firebaseio.com",
+    "project_id": "rumusmatematikalengkap-9c693",
+    "storage_bucket": "rumusmatematikalengkap-9c693.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:748983923706:android:5d5bd666cf6d6797",
+        "android_client_info": {
+          "package_name": "edlib.rumusmatematikalengkap"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "748983923706-nau4jhdtf258r214ic22uqj75qe51gtr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "edlib.rumusmatematikalengkap",
+            "certificate_hash": "c0de2f128a18503309166db0b03dd2a9ff178c42"
+          }
+        },
+        {
+          "client_id": "748983923706-uir9vn4ht4e3usf5fddga3ik9l95ofr2.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "748983923706-uir9vn4ht4e3usf5fddga3ik9l95ofr2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDC9NvF0EipqkuMmyqEoRS6yPbSjrAxku8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "748983923706-uir9vn4ht4e3usf5fddga3ik9l95ofr2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

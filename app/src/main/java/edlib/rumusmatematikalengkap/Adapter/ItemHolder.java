@@ -8,6 +8,9 @@ import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 
+import br.tiagohm.markdownview.MarkdownView;
+import br.tiagohm.markdownview.css.ExternalStyleSheet;
+import br.tiagohm.markdownview.css.styles.Github;
 import edlib.rumusmatematikalengkap.R;
 
 public class ItemHolder extends RecyclerView.ViewHolder {
@@ -28,5 +31,11 @@ public class ItemHolder extends RecyclerView.ViewHolder {
         Glide.with(context)
                 .load(img)
                 .into(imgIcon);
+    }
+
+    public void setBody(String body) {
+        MarkdownView markdownView = view.findViewById(R.id.markdown_content);
+        markdownView.addStyleSheet(ExternalStyleSheet.fromAsset("style.css", null));
+        markdownView.loadMarkdown(body);
     }
 }

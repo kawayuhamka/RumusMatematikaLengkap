@@ -1,5 +1,6 @@
 package edlib.rumusmatematikalengkap;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.LinearLayoutManager;
@@ -77,9 +78,17 @@ public class Drawer extends AppCompatActivity
 
         adapter = new FirebaseRecyclerAdapter<RcModel, ItemHolder>(options) {
             @Override
-            protected void onBindViewHolder(@NonNull ItemHolder holder, int position, @NonNull RcModel model) {
+            protected void onBindViewHolder(@NonNull ItemHolder holder, int position, @NonNull final RcModel model) {
                 holder.setTitle(model.getTitle());
                 holder.setImg(getBaseContext(), model.getImg());
+                holder.view.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(getApplicationContext(), ContentSlider.class);
+                        intent.putExtra("namePut", model.getName());
+                        startActivity(intent);
+                    }
+                });
             }
 
             @NonNull

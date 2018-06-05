@@ -4,4 +4,6 @@
     <color name="colorPrimaryDark">#8c0c59</color>
     <color name="colorAccent">#FF4081</color>
     <color name="red">#ea6145</color>
+
+    <color name="semiPri">#79ec0e93</color>
 </resources>

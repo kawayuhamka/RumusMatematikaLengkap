@@ -10,7 +10,6 @@ import com.bumptech.glide.Glide;
 
 import br.tiagohm.markdownview.MarkdownView;
 import br.tiagohm.markdownview.css.ExternalStyleSheet;
-import br.tiagohm.markdownview.css.styles.Github;
 import edlib.rumusmatematikalengkap.R;
 
 public class ItemHolder extends RecyclerView.ViewHolder {

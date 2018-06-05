@@ -5,12 +5,14 @@ public class RcModel {
     private String img;
     private String body;
     private String name;
+    private int idCat;
 
-    public RcModel(String title, String img, String body, String name) {
+    public RcModel(String title, String img, String body, String name, int idCat) {
         this.title = title;
         this.img = img;
         this.body = body;
         this.name = name;
+        this.idCat = idCat;
     }
 
     public RcModel() {
@@ -46,5 +48,13 @@ public class RcModel {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public int getIdCat() {
+        return idCat;
+    }
+
+    public void setIdCat(int idCat) {
+        this.idCat = idCat;
     }
 }

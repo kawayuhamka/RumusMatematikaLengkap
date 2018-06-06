@@ -26,7 +26,8 @@
         </activity>
         <activity android:name=".Activity.ContentSlider" />
         <activity android:name=".Activity.ListMateri" />
-        <activity android:name=".Activity.About"></activity>
+        <activity android:name=".Activity.About" />
+        <activity android:name=".splashscreen"></activity>
     </application>
 
 </manifest>

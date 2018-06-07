@@ -17,6 +17,11 @@
             android:name=".Activity.Drawer"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".Activity.ContentSlider" />
+        <activity android:name=".Activity.ListMateri" />
+        <activity android:name=".Activity.About" />
+        <activity android:name=".SplashActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,10 +29,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Activity.ContentSlider" />
-        <activity android:name=".Activity.ListMateri" />
-        <activity android:name=".Activity.About" />
-        <activity android:name=".splashscreen"></activity>
+        <activity android:name=".Activity.Login">
+        </activity>
     </application>
 
 </manifest>

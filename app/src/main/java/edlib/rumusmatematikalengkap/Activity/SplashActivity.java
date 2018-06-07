@@ -1,4 +1,4 @@
-package edlib.rumusmatematikalengkap;
+package edlib.rumusmatematikalengkap.Activity;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
@@ -22,7 +22,7 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.GoogleAuthProvider;
 import com.google.firebase.database.FirebaseDatabase;
 
-import edlib.rumusmatematikalengkap.Activity.Drawer;
+import edlib.rumusmatematikalengkap.R;
 
 public class SplashActivity extends AppCompatActivity {
     private ProgressDialog progressDialog;
@@ -50,7 +50,6 @@ public class SplashActivity extends AppCompatActivity {
             public void run() {
                 //login();
                 startActivity(new Intent(getApplicationContext(), Drawer.class));
-                finish();
             }
         }, 4000);
     }

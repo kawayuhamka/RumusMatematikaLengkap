@@ -165,7 +165,8 @@ public class Drawer extends AppCompatActivity
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
         } else {
-            super.onBackPressed();
+            //super.onBackPressed();
+            moveTaskToBack(true);
         }
     }
 
@@ -251,4 +252,6 @@ public class Drawer extends AppCompatActivity
         versi.setText(versionName);
 
     }
+
+
 }

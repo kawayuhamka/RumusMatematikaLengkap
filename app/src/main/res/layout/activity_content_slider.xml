@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".Activity.ContentSlider">
 
-    <android.support.v7.widget.RecyclerView
+    <edlib.rumusmatematikalengkap.RvConfig.EmptyRecyclerView
         android:id="@+id/recycler_slider"
         app:escapeHtml="false"
         android:layout_width="match_parent"
@@ -17,5 +17,27 @@
         android:scrollbarStyle="outsideInset"
         android:fadeScrollbars="false"
         android:clipToPadding="false"/>
+
+    <LinearLayout
+        android:id="@+id/empty"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/gurumuda"
+            android:layout_margin="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Belum ada data"
+            android:textSize="15sp"
+            android:textAlignment="center"/>
+
+    </LinearLayout>
 
 </RelativeLayout>

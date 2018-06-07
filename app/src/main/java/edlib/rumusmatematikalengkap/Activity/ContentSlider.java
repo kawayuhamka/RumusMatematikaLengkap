@@ -12,6 +12,7 @@ import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
@@ -22,12 +23,14 @@ import com.google.firebase.database.Query;
 import edlib.rumusmatematikalengkap.Adapter.ItemHolder;
 import edlib.rumusmatematikalengkap.Model.RcModel;
 import edlib.rumusmatematikalengkap.R;
+import edlib.rumusmatematikalengkap.RvConfig.EmptyRecyclerView;
 
 public class ContentSlider extends AppCompatActivity {
     private FirebaseRecyclerAdapter<RcModel, ItemHolder> adapter;
 
 
-    private RecyclerView recyclerView;
+    private EmptyRecyclerView recyclerView;
+    private LinearLayout empty;
     private String nameCat, title;
     private int id;
 
@@ -36,6 +39,7 @@ public class ContentSlider extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_content_slider);
         recyclerView = findViewById(R.id.recycler_slider);
+        empty = findViewById(R.id.empty);
         passingIntent();
         setupDatabase();
         setupToolbar();
@@ -79,6 +83,7 @@ public class ContentSlider extends AppCompatActivity {
 
         SnapHelper snapHelper = new PagerSnapHelper();
         snapHelper.attachToRecyclerView(recyclerView);
+        recyclerView.setEmptyView(empty);
         recyclerView.setAdapter(adapter);
     }
 
